@@ -1,0 +1,52 @@
+{
+  "cli": {
+    "version": ">= 5.2.0"
+  },
+  "build": {
+    "base": {
+    },
+    "simulator": {
+      "node": "18.16.0",
+      "developmentClient": true,
+      "ios": {
+        "simulator": true
+      },
+      "android": {
+        "buildType": "apk",
+        "withoutCredentials": true
+      }
+    },
+    "development": {
+      "node": "18.16.0",
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "node": "18.16.0",
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk",
+        "withoutCredentials": true
+      }
+    },
+    "production": {
+      "node": "18.16.0",
+      "extends": "base",
+      "developmentClient": true,
+      "ios": {
+        "simulator": true
+      },
+      "android": {
+        "buildType": "apk",
+        "withoutCredentials": true
+      }
+    }
+  },
+  "submit": {
+    "production": {
+    }
+  }
+}
+
+git config user.email "pavlo@xdefi.io"
+git config user.name "Pavlo"
