@@ -47,6 +47,3 @@
     }
   }
 }
-
-git config user.email "pavlo@xdefi.io"
-git config user.name "Pavlo"
